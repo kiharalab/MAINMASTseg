@@ -34,3 +34,12 @@ cd MAINMASTseg<br>
 rm MAINMASTseg *.o #remove compiled files <br>
 make -f MakefileMacOS #For mac<br>
 
+## Tutorial
+[Example1](./Example1) contains all input files and result files.
+Please check http://kiharalab.org/mainmast_seg/Tutorials.html
+
+## Input Data
+
+
+
+
