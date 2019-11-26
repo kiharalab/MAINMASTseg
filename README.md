@@ -18,5 +18,19 @@ OpenMP library
 
 ## Installation for MacOS
 
+1. Install Xcode  
+2. Install Homebrew  
 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+3. Install OpenMP  
+
+brew install libomp
+
+4. Complile code  
+
+git clone https://github.com/kiharalab/MAINMASTseg.git<br>
+cd MAINMASTseg<br>
+rm MAINMASTseg *.o #remove compiled files <br>
+make -f MakefileMacOS #For mac<br>
 
