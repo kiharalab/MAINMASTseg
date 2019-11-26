@@ -55,27 +55,42 @@ Then save as "MAP_m4A.mrc".
 EMD-0093 has C4 symmetry. The map size is (220x1.34,220x1.34,220x1.34).
 The center of the map is (147.4,147.4,147.4).  
 In Chimera,  
-1. open 6gyn.pdb as #0
+1. open 6gyn.pdb as #0  
 2. Type the following command in Chimera command line  
 
 sym #0 group c4 center 147.4,147.4,147.4  
 
 3. Save all pdbs as symmetry.pdb  
 4. Extract the rotation matrix from the saved pdb file as:
-
+```
 grep BIOMT[1-3] symmetry.pdb > MTX.txt 
-
+```
 ##### Make a rotation matrix file by phenix.map_symmetry
 When the center of the EM map is unknown. phenix.map_symmetry is able to identify the rotation matrix.
-
+```
 phenix.map_symmetry MAP_m4A.mrc symmetry=C4
+```
 Then, convert the output file (symmetry_from_map.ncs_spec) to MTX.txt.
-
+```
 ../conv_ncs.pl symmetry_from_map.ncs_spec > MTX.txt
-
-
-
+```
 #### Segmentation
+MAINMASTseg generates the segmented MST (-M option) and density maps (-W option).  
+
+(1) Generate MSTs only with the recommended contour level 0.7.
+```
+../MainmastSeg -i MAP_m4A.mrc -Y MTX.txt -c 8 -t 0.7 -M > test.cif
+```
+Visualize MSTs by Pymol:
+```
+../bondtreeCIF.pl test.cif > a.txt
+```
+Open a.txt by pymol:
+```
+pymol -u a.txt
+```
+
+
 
 #### Visualization
 
