@@ -20,20 +20,21 @@ OpenMP library
 
 1. Install Xcode  
 2. Install Homebrew  
-
+```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+```
 3. Install OpenMP  
-
+```
 brew install libomp
-
+```
 4. Complile code  
 
 git clone https://github.com/kiharalab/MAINMASTseg.git<br>
+```
 cd MAINMASTseg<br>
 rm MAINMASTseg *.o #remove compiled files <br>
 make -f MakefileMacOS #For mac<br>
-
+```
 ## Tutorial
 [Example1](./Example1) contains all input files and result files.  
 Please check http://kiharalab.org/mainmast_seg/Tutorials.html
@@ -57,9 +58,9 @@ The center of the map is (147.4,147.4,147.4).
 In Chimera,  
 1. open 6gyn.pdb as #0  
 2. Type the following command in Chimera command line  
-
+```
 sym #0 group c4 center 147.4,147.4,147.4  
-
+```
 3. Save all pdbs as symmetry.pdb  
 4. Extract the rotation matrix from the saved pdb file as:
 ```
