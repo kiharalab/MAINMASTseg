@@ -15,6 +15,7 @@ Cite : Terashi, Genki, and Daisuke Kihara. "MAINMASTseg: Automated map segmentat
 * UCSF Chimera {EM map preparation & visualization} : https://www.cgl.ucsf.edu/chimera/  
 * Pymol{for visualiztion} : https://pymol.org/2/  
 * OpenMP library
+* C compiler (gcc or clang in Mac)
 
 ## Installation for MacOS
 
