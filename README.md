@@ -10,10 +10,13 @@ Contact: Daisuke Kihara (dkihara@purdue.edu)
 Cite : Terashi, Genki, and Daisuke Kihara. "MAINMASTseg: Automated map segmentation method for cryo-EM density maps with symmetry" in submission. 
 
 
-##Pre-required software
+## Pre-required software
 
-UCSF Chimera {EM map preparation} : https://www.cgl.ucsf.edu/chimera/  
+UCSF Chimera {EM map preparation & visualization} : https://www.cgl.ucsf.edu/chimera/  
 Pymol{for visualiztion} : https://pymol.org/2/  
+OpenMP library
+
+## Installation for MacOS
 
 
 
