@@ -92,7 +92,7 @@ Open a.txt by pymol:
 ```
 pymol -u a.txt
 ```
-![MST]()
+![MST](0093_mst.png)
 
 
 ##### (2) Generate segmented density maps
@@ -103,6 +103,7 @@ Once you confirmed the MSTs, MAINMASTseg can generate the segmented density maps
 ```
 This command will generate 4 mrc-format files (region0.mrc,region1.mrc,region2.mrc,region3.mrc). 
 
+![MAPs](0093_seg.png)
 
 #### Visualization (bondtreeCIF.pl)
 This program makes a Pymol script for visualization of MSTs.
