@@ -1,0 +1,44 @@
+
+Summary of NCS information
+Mon Nov 25 16:55:50 2019
+/net/kihara/home/gterashi/CABS/MAINMAST_seg_git/example1
+
+
+
+
+
+new_ncs_group
+new_operator
+
+rota_matrix    1.0000    0.0000    0.0000
+rota_matrix    0.0000    1.0000    0.0000
+rota_matrix    0.0000    0.0000    1.0000
+tran_orth     0.0000    0.0000    0.0000
+
+center_orth  147.4000  147.4000  147.4000
+new_operator
+
+rota_matrix    0.0000    1.0000   -0.0000
+rota_matrix   -1.0000    0.0000    0.0000
+rota_matrix    0.0000   -0.0000    1.0000
+tran_orth    -0.0002  294.7998    0.0000
+
+center_orth  147.4000  147.4000  147.4000
+new_operator
+
+rota_matrix   -1.0000    0.0000    0.0000
+rota_matrix   -0.0000   -1.0000    0.0000
+rota_matrix    0.0000    0.0000    1.0000
+tran_orth   294.7996  294.8004    0.0000
+
+center_orth  147.4000  147.4000  147.4000
+new_operator
+
+rota_matrix   -0.0000   -1.0000    0.0000
+rota_matrix    1.0000   -0.0000    0.0000
+rota_matrix    0.0000    0.0000    1.0000
+tran_orth   294.8006    0.0006    0.0000
+
+center_orth  147.4000  147.4000  147.4000
+
+
