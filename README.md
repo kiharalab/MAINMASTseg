@@ -46,9 +46,10 @@ MAINMASTseg requires (1) Density map (mrc format), and (2) Rotation Matrix file.
 #### (Optional) Remove noise from the EM map by UCSF Chimera
 Some EM map contains many noise at the recommended contour level.  
 Before computing segmentation, noise can be removed hideDust command, in UCSF Chimera.
-
+```
 sop hideDust #0 size 100 metric volume
-	
+```
+
 Then save as "MAP_m4A.mrc".
 
 #### Rotation Matrix file (PDB format)
@@ -78,7 +79,7 @@ Then, convert the output file (symmetry_from_map.ncs_spec) to MTX.txt.
 #### Segmentation
 MAINMASTseg generates the segmented MST (-M option) and density maps (-W option).  
 
-(1) Generate MSTs only with the recommended contour level 0.7.
+##### (1) Generate MSTs only with the recommended contour level 0.7.
 ```
 ../MainmastSeg -i MAP_m4A.mrc -Y MTX.txt -c 8 -t 0.7 -M > test.cif
 ```
@@ -91,9 +92,32 @@ Open a.txt by pymol:
 pymol -u a.txt
 ```
 
+##### (2) Generate segmented density maps
+
+Once you confirmed the MSTs, MAINMASTseg can generate the segmented density maps with -W option:
+```
+../MainmastSeg -i MAP_m4A.mrc -Y MTX.txt -c 8 -t 0.7 -M -W > test2.cif
+```
+This command will generate 4 mrc-format files (region0.mrc,region1.mrc,region2.mrc,region3.mrc). 
 
 
-#### Visualization
+#### Visualization (bondtreeCIF.pl)
+This program makes a Pymol script for visualization of MSTs.
+```
+bondtreeCIF.pl [Output of MAINMASTseg (CIF format)] > a.txt
+```	
+Then, the "a.txt" can be used by pymol as
+```
+pymol -u a.txt
+```	
+
+#### Generating Rotation Matrix (conv_ncs.pl)
+This program convert symmetry_from_map.ncs_spec (output file of phenix.map_symmetry) to the rotation matrix file.
+```
+conv_ncs.pl [symmetry_from_map.ncs_spec] > MTX.txt
+```
+
+  
 
 
 
