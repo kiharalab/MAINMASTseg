@@ -57,7 +57,7 @@ Then save as "MAP_m4A.mrc".
 ##### Make a rotation matrix file by UCSF Chimera
 EMD-0093 has C4 symmetry. The map size is (220x1.34,220x1.34,220x1.34).
 The center of the map is (147.4,147.4,147.4).  
-+ In Chimera,  
+In Chimera,  
 1. open 6gyn.pdb as #0  
 2. Type the following command in Chimera command line  
 ```
@@ -92,6 +92,8 @@ Open a.txt by pymol:
 ```
 pymol -u a.txt
 ```
+![MST]()
+
 
 ##### (2) Generate segmented density maps
 
