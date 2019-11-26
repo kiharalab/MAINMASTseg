@@ -92,7 +92,7 @@ Open a.txt by pymol:
 ```
 pymol -u a.txt
 ```
-![MST](0093_mst.png)
+![MST](0093_mst.png | width=100)
 
 
 ##### (2) Generate segmented density maps
