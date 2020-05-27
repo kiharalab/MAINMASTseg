@@ -7,7 +7,7 @@ License: GPL v3 for academic use. (For commercial use, please contact us for dif
 
 Contact: Daisuke Kihara (dkihara@purdue.edu)
 
-Cite : Terashi, Genki, and Daisuke Kihara. "MAINMASTseg: Automated map segmentation method for cryo-EM density maps with symmetry" in submission. 
+Cite : Terashi, G., Kagaya, Y. & Kihara, D. MAINMASTseg: Automated Map Segmentation Method for Cryo-EM Density Maps with Symmetry. J Chem Inf Model 60, 2634-2643 (2020).
 
 
 ## Pre-required software
@@ -32,9 +32,18 @@ brew install libomp
 ```
 git clone https://github.com/kiharalab/MAINMASTseg.git<br>
 
+cd MAINMASTseg
+rm MAINMASTseg *.o #remove compiled files
+make -f MakefileMacOS #For mac
+```
+## Installation for Linux
+1. Complile code  
+```
+git clone https://github.com/kiharalab/MAINMASTseg.git
+
 cd MAINMASTseg<br>
-rm MAINMASTseg *.o #remove compiled files <br>
-make -f MakefileMacOS #For mac<br>
+rm MAINMASTseg *.o #remove compiled files
+make
 ```
 ## Tutorial
 [Example1](./Example1) contains all input files and result files.  
